@@ -1,0 +1,72 @@
+
+/* ========================= Footer ====================== */
+.footer {
+    background-color: #0A142F;
+    padding: 55px 0;
+    color: #fff;
+}
+
+.footer__ul li {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.616);
+    line-height: 2;
+}
+
+.footer__titles {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.308);
+    text-decoration: none;
+}
+
+.footer__hr {
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+.footer__bottom {
+    text-align: center;
+    padding: 35px 0 0;
+}
+
+.footer__bottom img {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer__roadmap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer__roadmap p a {
+    margin: 20px 30px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.footer___socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer___socialMedia img {
+    margin: 10px 20px;
+}
+
+.footer___socialMedia a {
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.footer__copyRight {
+    color: rgba(255, 255, 255, 0.308);
+    font-size: 16px;
+    font-weight: 500;
+}
