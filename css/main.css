@@ -102,7 +102,7 @@ body {
     color: #E51F1F;
     background:  none;
 }
-section, .nav-container, .hero-container, .nav-hero-container {
+section:not(.about, .featured-section), .nav-container, .hero-container, .nav-hero-container {
     max-width: 1400px;
 }
 .nav-hero-container {
@@ -308,7 +308,7 @@ section, .nav-container, .hero-container, .nav-hero-container {
 
 .expect-section .cards-wrapper{
     display: grid;
-    grid-column-gap: 14px;
+    grid-column-gap: 24px;
     grid-row-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-template-areas: none;
@@ -317,7 +317,7 @@ section, .nav-container, .hero-container, .nav-hero-container {
 .expect-wrapper .card {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    /* width: 95%; */
     height: 100%;
     padding: 24px 24px 0px 24px;
     border: none;
