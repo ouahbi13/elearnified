@@ -102,7 +102,7 @@ body {
     color: #E51F1F;
     background:  none;
 }
-section:not(.about, .featured-section), .nav-container, .hero-container, .nav-hero-container {
+section:not(.about, .featured-section, .testimonials-section), .nav-container, .hero-container, .nav-hero-container {
     max-width: 1400px;
 }
 .nav-hero-container {
@@ -436,7 +436,7 @@ section:not(.about, .featured-section), .nav-container, .hero-container, .nav-he
     padding: 0;
 }
 .browse-card-wrapper {
-    width: 190px;
+    width: 240px;
     height: 100%;
 }
 
@@ -600,7 +600,7 @@ section:not(.about, .featured-section), .nav-container, .hero-container, .nav-he
     position: relative;
 }
 .testimonial-title {
-    margin: 115px 0px 10px 194px;
+    margin: 115px 0px 10px 110px;
     font-family: 'Neue Helvetica';
     font-style: normal;
     font-weight: bold;
