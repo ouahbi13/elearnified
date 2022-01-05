@@ -1,6 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/neue-helvetica');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('http://fonts.cdnfonts.com/css/dancing-script');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -9,6 +10,10 @@
 
 body {
     overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Oswald' !important;
 }
 
 .navbar-hero-section {
@@ -31,7 +36,7 @@ body {
 }
 
 .hero-title {
-    font-family: 'Neue Helvetica';
+    font-family: 'Oswald', 'sans-serif';
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -185,7 +190,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 .featured-title-upper {
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 135%;
     position: relative;
 }
@@ -201,7 +206,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 .featured-title-lower {
     font-style: normal;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 116%;
 }
 .featured-paragraph {
@@ -282,12 +287,12 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     font-family: 'Neue Helvetica';
     font-style: normal;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 116%;
     margin: auto;
     margin-bottom: 80px;
     text-align: center;
-    width: 600px;
+    width: 450px;
     position: relative;
 }
 .expect-title::before{    

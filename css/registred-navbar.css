@@ -1,0 +1,74 @@
+.navbar {
+    height: 75px;
+    padding: 0 16px;
+}
+.container {
+    height: 100%;
+}
+#activity-page .nav-link {
+    color: #fff;
+    /* font-family: 'Open Sans'; */
+    font-weight: 600;
+    font-size: 18px;
+}
+#activity-page .nav-link:hover {
+    color: #E51F1F;
+}
+  
+.profile-picture {
+    width: 48px;
+    height: 48px;
+    background: url('../img/course-details-banner.png') no-repeat center;
+    background-size: cover;
+}
+#activity-page .profile-picture:hover {
+    border-color: #E51F1F !important;
+}
+
+.btn-primary, .btn-secondary {
+    width: 196px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #E51F1F;
+    border: none;
+    font-family: 'Neue Helvetica';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    /* padding: 16px 40px; */
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background: none;
+    border: 1px solid #E51F1F;
+    box-shadow: none;
+    color: #E51F1F;
+}
+  
+@media screen and (max-width: 992px) {
+    #activity-page .navbar {
+      background-color: #0A142F !important;
+    }
+    .offcanvas {
+      max-width: 75%;
+    }
+    #activity-page .offcanvas .nav-link {
+      color: #000;
+      font-weight: normal;
+    }
+    #activity-page .offcanvas .nav-link:hover {
+      color: #E51F1F;
+    }
+    .user-info img {
+      max-width: 48px;
+      height: 48px;
+    }
+    .user-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .user-status {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid container p-0">
+      <a class="navbar-brand flex-grow-1 flex-lg-grow-0" href="#">
+          <img src="img/elearnified Logo-noSlog (2)-b.png" alt="elearnified logo">
+      </a>
+      <div class="offcanvas offcanvas-end rounded-start-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset position-absolute" style="top: 32px; right: 40px; box-shadow: none;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex mt-5 mt-lg-0 ms-3 ms-md-5 flex-column flex-lg-row justify-content-lg-between align-items-start align-items-lg-center" style="font-family: 'Open Sans';">
+            <div class="d-lg-none">
+              <div class="user-info d-flex gap-3 mb-4">
+                <img src="img/profile-pic-mobile.png" alt="">
+                <div class="d-flex flex-column">
+                  <h1 class="user-name">John Doe</h1>
+                  <h2 class="user-status">Subscriber</h2>
+                </div>
+              </div>
+              <hr>
+              <ul class="navbar-nav mb-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preferences</a>
+                </li>
+              </ul>
+              <hr>
+            </div>
+            <ul class="navbar-nav d-flex gap-2 ms-lg-3 justify-content-between align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Training Centers</a>
+                    </li>
+            </ul>
+            <button type="button" class="btn btn-primary d-lg-none mt-4 logout">
+                Logout
+            </button>
+        </div>
+      </div>
+      <ul class="navbar-nav d-flex flex-row gap-3 me-3 gap-lg-2 align-items-center">
+        <li class="nav-item">
+            <a class="nav-link shopping-cart" href="#">
+              <i class="far fa-shopping-cart fa-lg"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link notification" href="#">
+            <i class="fal fa-bell fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link rounded-circle border border-2 border-white profile-picture" href="#">
+          </a>
+        </li>
+      </ul>
+      <button class="nav-link btn ham-btn d-lg-none" style="box-shadow: none; padding: 0;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="img/ham.svg" alt="menu">
+      </button>
+    </div>
+</nav>
