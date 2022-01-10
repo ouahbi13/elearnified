@@ -361,10 +361,10 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 /* ============== Browse Courses =============== */
 .browse-section {
     height: 100%;
-    margin-top: 160px;
+    /* margin-top: 160px; */
     background-color: #F3F7FF;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 68px;
+    padding-bottom: 68px;
 }
 
 .browse-container {
@@ -373,6 +373,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #F3F7FF;
 }
 .browse-title {
     font-family: 'Neue Helvetica';
