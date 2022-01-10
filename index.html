@@ -34,7 +34,6 @@
               </p>
               <div class="button-container">
                   <button type="button" class="btn btn-primary">View Courses
-                      <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
                   </button>
                   <button type="button" class="btn btn-outline-primary">Get Started</button>
               </div>
@@ -78,7 +77,20 @@
                 <div class="featured-container">
                     <div class="row">
                         <div class="featured-vid-wrapper col-md-7">
-                            <img src="img/Frame 231.png" alt="video">
+                            <img src="img/Frame 231.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1" alt="video">
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <video controls class="trailer-video">
+                                    <source src="vid/bill-nye-vid.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <video controls class="trailer-video">
+                              <source src="vid/bill-nye-vid.mp4" type="video/mp4">
+                            </video> -->
+                            
                         </div>
                         <div class="featured-wrapper-container col-md-5">
                             <div class="featured-wrapper">
@@ -90,12 +102,10 @@
                                     forcing Po to form an army out of the ragtag locals.
                                 </p>
                                 <div class="featured-button-container">
-                                    <button type="button" class="btn btn-primary overview">Overview
-                                        <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
-                                    </button>
-                                    <button type="button" class="btn btn-outline-primary start-course">Start Course
-                                        <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
-                                    </button>
+                                    <a type="button" class="btn btn-primary overview" href="course-details.html">Overview
+                                    </a>
+                                    <a type="button" class="btn btn-outline-primary start-course" href="activity-page.html">Start Course
+                                    </a>
                                 </div>
 
                             </div>
@@ -106,9 +116,18 @@
               <div class="carousel-item">
                 <div class="featured-container">
                     <div class="row">
-                        <div class="featured-vid-wrapper col-md-7">
-                            <img src="img/Frame 231.png" alt="video">
+                      <div class="featured-vid-wrapper col-md-7">
+                        <img src="img/Frame 231.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2" alt="video">
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <video controls class="trailer-video">
+                                <source src="vid/bill-nye-vid.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
                         </div>
+                    </div>
                         <div class="featured-wrapper-container col-md-5">
                             <div class="featured-wrapper">
                                 <h2 class="featured-title-upper">Featured course</h2>
@@ -120,10 +139,8 @@
                                 </p>
                                 <div class="featured-button-container">
                                     <button type="button" class="btn btn-primary overview">Overview
-                                        <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
                                     </button>
                                     <button type="button" class="btn btn-outline-primary start-course">Start Course
-                                        <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
                                     </button>
                                 </div>
 
@@ -135,9 +152,18 @@
               <div class="carousel-item">
                 <div class="featured-container">
                     <div class="row">
-                        <div class="featured-vid-wrapper col-md-7">
-                            <img src="img/Frame 231.png" alt="video">
+                      <div class="featured-vid-wrapper col-md-7">
+                        <img src="img/Frame 231.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" alt="video">
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <video controls class="trailer-video">
+                                <source src="vid/bill-nye-vid.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
                         </div>
+                    </div>
                         <div class="featured-wrapper-container col-md-5">
                             <div class="featured-wrapper">
                                 <h1 class="featured-title-upper">Featured course</h1>
@@ -149,10 +175,8 @@
                                 </p>
                                 <div class="featured-button-container">
                                     <button type="button" class="btn btn-primary overview">Overview
-                                        <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
                                     </button>
                                     <button type="button" class="btn btn-outline-primary start-course">Start Course
-                                        <span class="right-arrow"><img src="img/Path.png" alt="arrow"></span>
                                     </button>
                                 </div>
 
@@ -373,6 +397,15 @@
           return false;
       });  
 
+      });
+    </script>
+    <script>
+      $(function(){
+          $('.modal').modal({
+              show: false
+          }).on('hidden.bs.modal', function(){
+              $(this).find('video')[0].pause();
+          });
       });
     </script>
   </body>

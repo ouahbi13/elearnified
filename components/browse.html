@@ -4,78 +4,99 @@
         <div class="scroll-hider">
           <ul class="categories-list">
             <li class="category-item ">
-                <a href="#" class="category-link active">All Categories</a>
+                <button class="category-link active" id="all">All Categories</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Entertainement</a>
+                <button class="category-link" id="entertainment">Entertainement</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Lifestyle</a>
+                <button class="category-link" id="lifestyle">Lifestyle</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Writing</a>
+                <button class="category-link" id="writing">Writing</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Business</a>
+                <button class="category-link" id="business">Business</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Food</a>
+                <button class="category-link" id="food">Food</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Music</a>
+                <button class="category-link" id="music">Music</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">Design</a>
+                <button class="category-link" id="design">Design</button>
             </li>
             <li class="category-item">
-                <a href="#" class="category-link">More</a>
+                <button class="category-link" id="more">More</button>
             </li>
           </ul>
         </div>
         <div class="course-cards-wrapper container-fluid">
             <div class="row g-3">
-                <div class="browse-card-wrapper col-6 col-lg-2">
+                <div class="browse-card-wrapper all lifestyle col-6 col-lg-2">
                   <div class="card course-card text-white">
                     <img src="img/browse-1.png" class="course-card-img" alt="...">
                     <div class="card-img-overlay">
                       <h5 class="card-title">TITLE</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="browse-card-button-container d-flex flex-column gap-3 justify-content-center">
+                        <button type="button" class="browse-trailer btn btn-primary">TRAILER</button>
+                        <button type="button" class="browse-get-started btn btn-primary">GET STARTED</button>
+                      </div>
                     </div>
+                    
                   </div>
                 </div>
-                <div class="browse-card-wrapper col-6 col-lg-2">
+                <div class="browse-card-wrapper all lifestyle col-6 col-lg-2">
                   <div class="card course-card text-white">
                     <img src="img/browse-3.png" class="course-card-img" alt="...">
                     <div class="card-img-overlay">
                       <h5 class="card-title">TITLE</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="browse-card-button-container d-flex flex-column gap-3 justify-content-center">
+                        <button type="button" class="browse-trailer btn btn-primary">TRAILER</button>
+                        <button type="button" class="browse-get-started btn btn-primary">GET STARTED</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="browse-card-wrapper col-6 col-lg-2">
+                <div class="browse-card-wrapper all lifestyle col-6 col-lg-2">
                   <div class="card course-card text-white">
                     <img src="img/browse-3.png" class="course-card-img" alt="...">
                     <div class="card-img-overlay">
                       <h5 class="card-title">TITLE</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="browse-card-button-container d-flex flex-column gap-3 justify-content-center">
+                        <button type="button" class="browse-trailer btn btn-primary">TRAILER</button>
+                        <button type="button" class="browse-get-started btn btn-primary">GET STARTED</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="browse-card-wrapper col-6 col-lg-2">
+                <div class="browse-card-wrapper all entertainment col-6 col-lg-2">
                   <div class="card course-card text-white">
                     <img src="img/browse-4.png" class="course-card-img" alt="...">
                     <div class="card-img-overlay">
                       <h5 class="card-title">TITLE</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="browse-card-button-container d-flex flex-column gap-3 justify-content-center">
+                        <button type="button" class="browse-trailer btn btn-primary">TRAILER</button>
+                        <button type="button" class="browse-get-started btn btn-primary">GET STARTED</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="browse-card-wrapper col-6 col-lg-2 ">
+                <div class="browse-card-wrapper all entertainment col-6 col-lg-2 ">
                   <div class="card course-card text-white">
                     <img src="img/browse-5.png" class="course-card-img" alt="...">
                     <div class="card-img-overlay">
                       <h5 class="card-title">TITLE</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="browse-card-button-container d-flex flex-column gap-3 justify-content-center">
+                        <button type="button" class="browse-trailer btn btn-primary">TRAILER</button>
+                        <button type="button" class="browse-get-started btn btn-primary">GET STARTED</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -83,7 +104,23 @@
             </div>
         </div>
         <button type="button" class="view-more btn btn-primary">View More
-          <span class="right-arrow"><img src="img/right-arrow.svg" alt="arrow"></span>
         </button>
     </div>
 </section>
+<script>
+  const list = document.querySelectorAll('.category-link');
+  const cardsList = document.querySelectorAll('.browse-card-wrapper');
+  function activeLink(){
+      list.forEach((item) => item.classList.remove('active'));
+      this.classList.add('active');
+      console.log(this.attributes.id.value)
+      for (let i = 0; i < cardsList.length; i++) {
+        if (cardsList[i].classList.contains(this.attributes.id.value)) {
+          cardsList[i].style.display = 'block';
+        }
+        else cardsList[i].style.display = 'none';
+        }
+      } 
+  list.forEach((item) => item.addEventListener('click',activeLink));
+  // $(.course-cards-wrapper .course-card).on()
+</script>
