@@ -575,10 +575,7 @@ section:not(.about), .nav-container, .hero-container {
     text-transform: uppercase;
 }
 
-/* ================ faq ======================== */
-.faq-section .accordion-item:nth-child(n+6) {
-    display: none;
-}
+
 
 
 @media screen and (max-width: 590px) {

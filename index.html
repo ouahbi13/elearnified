@@ -65,7 +65,7 @@
     </section>
 
     <section class="featured-section">
-        <div class="container">
+        <div class="container mw-100">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,8 +75,8 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="featured-container">
-                    <div class="row">
-                        <div class="featured-vid-wrapper col-md-7">
+                    <div class="row gap-3">
+                        <div class="featured-vid-wrapper col-lg-7">
                             <img src="img/Frame 231.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1" alt="video">
                             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered">
@@ -87,12 +87,8 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- <video controls class="trailer-video">
-                              <source src="vid/bill-nye-vid.mp4" type="video/mp4">
-                            </video> -->
-                            
                         </div>
-                        <div class="featured-wrapper-container col-md-5">
+                        <div class="featured-wrapper-container col-lg-5">
                             <div class="featured-wrapper">
                                 <h2 class="featured-title-upper">Featured course</h2>
                                 <h3 class="featured-title-lower">Ad eos saepe</h3>
@@ -115,7 +111,7 @@
               </div>
               <div class="carousel-item">
                 <div class="featured-container">
-                    <div class="row">
+                    <div class="row gap-3">
                       <div class="featured-vid-wrapper col-md-7">
                         <img src="img/Frame 231.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2" alt="video">
                         <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
@@ -151,8 +147,8 @@
               </div>
               <div class="carousel-item">
                 <div class="featured-container">
-                    <div class="row">
-                      <div class="featured-vid-wrapper col-md-7">
+                    <div class="row gap-3">
+                      <div class="featured-vid-wrapper col-md-6">
                         <img src="img/Frame 231.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" alt="video">
                         <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered">
@@ -164,7 +160,7 @@
                           </div>
                         </div>
                     </div>
-                        <div class="featured-wrapper-container col-md-5">
+                        <div class="featured-wrapper-container col-md-6">
                             <div class="featured-wrapper">
                                 <h1 class="featured-title-upper">Featured course</h1>
                                 <h2 class="featured-title-lower">Ad eos saepe</h2>
@@ -297,62 +293,75 @@
 
 
     <section class="testimonials-section">
-        <!-- <div class="container"> -->
-          <div class="container">
-            <h2 class="testimonial-title">Testimonials</h2>
-          </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="container"> -->  
+        <div class="container">
+          <h2 class="testimonial-title mx-auto my-5 ms-lg-3">Testimonials</h2>
+        </div>
+        <div id="carouselExampleIndicators2" class="carousel slide" role="button" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row flex-wrap-reverse carousel-row">
-                    <div class="card col-12 col-lg-7">
-                      <div class="container" style="margin-right:0;max-width: 1000px;">
-                        <div class="row g-0">
-                          <div class="col-md-12">
+                    <div class="card col-12">
+                      <!-- <div class="container" style="margin-right:0;max-width: 1000px;"> -->
+                      <div class="container">
+                        <div class="row g-0 d-flex justify-content-center flex-wrap-reverse">
+                          <!-- <div class="col-12"> -->
                             <!-- <div class="container"> -->
-                              <div class="card-body">
+                              <div class="card-body flex-grow-0 col-12 col-lg-7">
                                 <h5 class="card-title"><img src="img/“.svg" alt="quote"></h5>
                                 <p class="card-text">“There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.”</p>
                                 <p class="card-text-name">Robert</p>
                                 <p class="card-text-status">Entertainer, USA</p>
                                 <p class="card-text-signature">Robert</p>
                               <!-- </div> -->
-                            </div>
-                          </div>
+                              </div>
+                          <!-- </div> -->
+                              <div class="carousel-img d-none d-lg-block col-12 col-lg-5">
+                              </div>
                         </div>
                       </div>
                       
                     </div>
-                    <div class="carousel-img col-12 col-lg-5">
+                    <div class="carousel-img col-12 d-lg-none">
                       <!-- <img src="img/MasterClass_-Ringo-Starr.png" alt="testimonial-img"> -->
                     </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row flex-wrap-reverse carousel-row">
-                    <div class="card col-12 col-lg-7">
-                      <div class="row g-0">
-                        <div class="col-md-12">
-                          <div class="card-body">
-                            <h5 class="card-title"><img src="img/“.svg" alt="quote"></h5>
-                            <p class="card-text">“There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.”</p>
-                            <p class="card-text-name">Robert</p>
-                            <p class="card-text-status">Entertainer, USA</p>
-                            <p class="card-text-signature">Robert</p>
-                          </div>
+                    <div class="card col-12">
+                      <!-- <div class="container" style="margin-right:0;max-width: 1000px;"> -->
+                      <div class="container">
+                        <div class="row g-0 d-flex justify-content-center flex-wrap-reverse">
+                          <!-- <div class="col-12"> -->
+                            <!-- <div class="container"> -->
+                              <div class="card-body flex-grow-0 col-12 col-lg-7">
+                                <h5 class="card-title"><img src="img/“.svg" alt="quote"></h5>
+                                <p class="card-text">“There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.”</p>
+                                <p class="card-text-name">Robert</p>
+                                <p class="card-text-status">Entertainer, USA</p>
+                                <p class="card-text-signature">Robert</p>
+                              <!-- </div> -->
+                              </div>
+                          <!-- </div> -->
+                              <div class="carousel-img d-none d-lg-block col-12 col-lg-5">
+                              </div>
                         </div>
                       </div>
+                      
                     </div>
-                    <div class="carousel-img col-12 col-lg-5">
+                    <div class="carousel-img col-12 d-lg-none">
                       <!-- <img src="img/MasterClass_-Ringo-Starr.png" alt="testimonial-img"> -->
                     </div>
                 </div>
               </div>
+              
+              
             </div>
         </div>
         <!-- </div> -->
@@ -407,6 +416,28 @@
               $(this).find('video')[0].pause();
           });
       });
+    </script>
+    <script>
+      // This code is for adjusting the testimonials section title to the testimonial body
+      function reportWindowSize() {
+        var rect = document.querySelector('.testimonials-section .carousel-inner .active .card-body').getBoundingClientRect();
+        console.log(rect.top, rect.right, rect.bottom, rect.left);
+        $(".testimonials-section > .container").css({"margin-left": `${rect.left}px`})
+        if (!x.matches) {
+          $(".testimonials-section > .container").css({"margin-left": "0px"})
+        }
+        }
+      var x = window.matchMedia("(min-width: 992px)")
+      function myFunction(x) {
+        if (x.matches) { // If media query matches
+          var rect = document.querySelector('.testimonials-section .carousel-inner .active .card-body').getBoundingClientRect();
+          $(".testimonials-section > .container").css({"margin-left": `${rect.left}px`})
+          window.onresize = reportWindowSize;
+        }
+      }
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state changes
+      
     </script>
   </body>
 </html>

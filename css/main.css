@@ -654,28 +654,21 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     margin: auto;
 }
 .accordion-item {
-    border: 0.5px solid #D2D1D4;
     border-top: none;
     box-shadow: 0px 8px 16px rgba(112, 144, 176, 0.1);
     border-radius: 4px;
 }
-.accordion-header{
-    border-top: 0.5px solid #D2D1D4;
-    /* border-bottom: none; */
+.faq-section .accordion-item:nth-child(n+6) {
+    display: none;
 }
+
 #body .accordion-button {
     font-family: 'Neue Helvetica';
-    /* border-top: 0.5px solid #D2D1D4; */
-    /* border-bottom: none; */
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 18px;
-    line-height: 135%;
-    /* color: #343434; */
 }
-/* .accordion-button:focus {
-    color: #E51F1F;
-} */
+
 .accordion-body {
     font-family: 'Open Sans';
     font-style: normal;
@@ -690,6 +683,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 #body .accordion-button:not(.collapsed) {
     background-color: #fff;
     color: #E51F1F;
+    font-weight: bold;
 }
 #body .accordion-button:not(.collapsed)::after{
     background-image: url('../img/red-up.svg') !important;
@@ -707,14 +701,16 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     height: 700px;
     color: #343434;
     position: relative;
+    padding-top: 50px;
+}
+.testimonials-section > .container {
+    margin-left: 0;
+    max-width: 100%;
 }
 .testimonial-title {
-    margin: 115px 0px 10px 110px;
     font-family: 'Neue Helvetica';
-    font-style: normal;
     font-weight: bold;
     font-size: 34px;
-    line-height: 116%;
     position: relative;
 }
 .testimonial-title::before {
@@ -728,6 +724,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 }
 
 .testimonials-section .carousel {
+    /* position:relative; */
     margin-right: 0px ;
     z-index: 1 ;
 }
@@ -739,10 +736,11 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     overflow: visible !important;
 }
 .testimonials-section .carousel-img {
-    width: 402px;
-    height: 539px;
+    width: 373px;
+    /* height: 539px; */
+    min-height: 100%;
     padding: 0;
-    transform: translateY(16px);
+    /* transform: translateY(16px); */
     z-index: 10;
     background-image: url('../img/MasterClass_-Ringo-Starr.png');
     background-repeat: no-repeat;
@@ -756,11 +754,17 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     background: #F9F9F9;
     border: none;
     z-index: 1;
-
+}
+.testimonials-section .card .container {
+    min-height: 100%;
+}
+.testimonials-section .card-body {
+    margin-top: 77px;
 }
 .testimonials-section .card .row {
-    padding-top: 80px;
-    padding-left: 178px;
+    /* padding-top: 80px; */
+    /* padding-left: 178px; */
+    min-height: 100%;
     width: 100%;
     z-index: 1;
 }
@@ -771,7 +775,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 .testimonials-section .card-text {
     font-family: 'Neue Helvetica';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 24px;
     line-height: 132%;
     align-items: center;
@@ -782,7 +786,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 147%;
     margin-bottom: 8px;
 }
@@ -790,7 +794,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
 .testimonials-section .card-text-status{
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 147%;
     margin-bottom: 8px;
 }
@@ -895,7 +899,7 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
     background: none;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
     /* =========== Hero Section ==============*/
     .hero-container {
     width: 400px;
@@ -986,23 +990,14 @@ section:not(.about, .featured-section, .testimonials-section), .nav-container, .
         /* background-color: aqua; */
         display: flex;
         align-items: center;
-        max-width: 90%;
-        max-height: 328px;
-        padding: 0;
-        margin: auto;
-        /* margin-top: -82px; */
-        transform: translateY(0);
-    }
-    .testimonials-section .carousel-img img {
-        width: 85%;
-        height: 100%;
+        height: 348px;
         margin: auto;
     }
     .testimonials-section .card {
         height: 417px;
     }
     .testimonials-section .card .row {
-        padding: 53px 16px;
+        padding: 0px 16px;
     }
     .testimonials-section .card-body {
         display: flex;
